@@ -15,7 +15,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://todo-mern-ia3f.onrender.com//user/login", {
+      const response = await axios.post("https://todo-mern-ia3f.onrender.com/user/login", {
         email,
         password,
       });
