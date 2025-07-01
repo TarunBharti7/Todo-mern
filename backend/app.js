@@ -61,7 +61,7 @@ app.get("/", verifyToken, (req, res) => {
 });
 
 app.get("/check", (req,res) => {
-  res.send("hello from backend")
+  res.send("hello world")
 })
 
 app.use("/user", userRoute);
