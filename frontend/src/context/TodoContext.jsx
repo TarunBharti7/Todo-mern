@@ -23,7 +23,7 @@ export const TodoProvider = ({ children }) => {
         console.log("Fetching todos for userId:", userId);
 
         const response = await axios.get(
-          `http://localhost:3000/api/todos/${userId}`,
+          `https://todo-mern-ia3f.onrender.com/api/todos/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

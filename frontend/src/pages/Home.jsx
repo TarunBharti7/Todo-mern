@@ -16,7 +16,7 @@ const Home = () => {
       const token = localStorage.getItem("userToken");
       if (!token) throw new Error("No token provided");
 
-      const response = await axios.get("http://localhost:3000/user/info", {
+      const response = await axios.get("https://todo-mern-ia3f.onrender.com//user/info", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

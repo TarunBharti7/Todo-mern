@@ -16,7 +16,7 @@ const Card = ({ data, userId }) => {
       }
   
       const response = await axios.delete(
-        `http://localhost:3000/api/todos/${userId}/${todoId}`,
+        `https://todo-mern-ia3f.onrender.com/api/todos/${userId}/${todoId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`, // Pass the token in the Authorization header
@@ -42,7 +42,7 @@ const Card = ({ data, userId }) => {
       }
   
       const response = await axios.put(
-        `http://localhost:3000/api/todos/${userId}/${todoId}`, // Send the request to update a specific todo
+        `https://todo-mern-ia3f.onrender.com/api/todos/${userId}/${todoId}`, // Send the request to update a specific todo
         { isCompleted: true }, // Update the isCompleted field to true
         {
           headers: {
