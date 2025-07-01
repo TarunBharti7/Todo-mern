@@ -60,6 +60,10 @@ app.get("/", verifyToken, (req, res) => {
   res.status(200).send("hello todo");
 });
 
+app.get("/check", (req,res) => {
+  res.send("hello from backend")
+})
+
 app.use("/user", userRoute);
 app.use("/api", verifyToken, todoRoute);
 app.use("/auth", authRouter);
